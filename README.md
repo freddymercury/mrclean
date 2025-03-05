@@ -2,7 +2,44 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js >= 20.11.1 (LTS version recommended)
+- npm or yarn
+
+This project includes an `.nvmrc` file. If you use [nvm](https://github.com/nvm-sh/nvm), you can simply run:
+
+```bash
+nvm use
+```
+
+This will automatically switch to the correct Node.js version.
+
+### Environment Variables Setup
+
+This application requires environment variables for LLM API keys. Before running the application:
+
+1. Create a `.env` file in the root directory
+2. Add your API keys and configuration (see [ENV_SETUP.md](./ENV_SETUP.md) for details)
+
+Example:
+```
+OPENAI_API_KEY=your_api_key_here
+DEFAULT_LLM_PROVIDER=openai
+DEFAULT_LLM_MODEL=gpt-4o
+```
+
+### Running the Application
+
+First, install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
